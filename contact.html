@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Jedan - Get in Touch">
+    <!-- Added stylesheet and Google Fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Contact | Jedan</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Jedan</a></h1>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Get in Touch</h2>
+        <p>
+            I'm always open to discussing new projects, creative ideas, or opportunities 
+            to be part of your vision. Fill out the form below and I'll get back to you 
+            as soon as possible.
+        </p>
+
+        <section aria-labelledby="contact-form-heading">
+            <h3 id="contact-form-heading">Contact Form</h3>
+            <form action="#" method="post" aria-describedby="form-instructions">
+                <p id="form-instructions">All fields marked with an asterisk (*) are required.</p>
+
+                <fieldset>
+                    <legend>Your Information</legend>
+
+                    <p>
+                        <label for="name">Name *</label><br>
+                        <input type="text" id="name" name="name" required autocomplete="name" placeholder="Your full name">
+                    </p>
+
+                    <p>
+                        <label for="email">Email *</label><br>
+                        <input type="email" id="email" name="email" required autocomplete="email" placeholder="your.email@example.com">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Your Message</legend>
+
+                    <p>
+                        <label for="subject">Subject *</label><br>
+                        <input type="text" id="subject" name="subject" required placeholder="What is this regarding?">
+                    </p>
+
+                    <p>
+                        <label for="message">Message *</label><br>
+                        <textarea id="message" name="message" rows="8" cols="50" required placeholder="Tell me about your project or inquiry..."></textarea>
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+            </form>
+        </section>
+
+        <section aria-labelledby="other-contact">
+            <h3 id="other-contact">Other Ways to Connect</h3>
+            <address>
+                <ul>
+                    <li>Email: <a href="mailto:hello@jedan.dev">hello@jedan.dev</a></li>
+                    <li>GitHub: <a href="https://github.com/jedan" rel="noopener noreferrer">github.com/jedan</a></li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/jedan" rel="noopener noreferrer">linkedin.com/in/jedan</a></li>
+                </ul>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Jedan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
